@@ -14,8 +14,9 @@ const wallet = new Keypair()
 
 
 //public key
-const publicKey = wallet._keypair.publicKey
+const publicKey = new PublicKey(wallet._keypair.publicKey)
 const secretKey = wallet._keypair.secretKey
 
 console.log(publicKey);
 console.log(secretKey);
+ 
